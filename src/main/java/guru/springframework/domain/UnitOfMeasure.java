@@ -9,6 +9,7 @@ import javax.persistence.Id;
 public class UnitOfMeasure {
     private String description;
 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -24,7 +25,6 @@ public class UnitOfMeasure {
         this.id = id;
     }
 
-    @Id
     public Long getId() {
         return id;
     }
